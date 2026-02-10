@@ -269,7 +269,11 @@ See: [Build with Github Action](https://github.com/windowsair/wireless-esp8266-d
 The following example shows a possible way to build on Windows:
 
 ```bash
+# install SDK
+cd  ESP8266_RTOS_SDK
+./install.sh
 # Build
+cd ..
 python ./idf.py build
 # Flash
 python ./idf.py -p /dev/ttyS5 flash
